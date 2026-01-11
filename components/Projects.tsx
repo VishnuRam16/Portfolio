@@ -10,7 +10,7 @@ const projects = [
     title: 'Code Explanation & Translation with Local AI',
     tools: 'Mistral, Python, Streamlit',
     description: 'Simple Coding Helper is a Streamlit web app that explains and translates code across multiple languages using a locally hosted Ollama model, ensuring offline functionality, privacy, and a user-friendly experience.',
-    github: '#',
+    github: 'https://github.com/VishnuRam16/Coding-Helper-Translator',
     category: 'AI/ML',
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     title: 'AI-Powered Music Genre Classification System',
     tools: 'Streamlit, Python, Tensorflow, librosa',
     description: 'A machine learning application that analyzes audio files to classify music genres. Using advanced audio feature extraction and multiple ML models, it provides real-time genre predictions through an intuitive Streamlit interface.',
-    github: '#',
+    github: 'https://github.com/VishnuRam16/Music-Genre-Classification',
     category: 'AI/ML',
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     title: 'PDF-based QA Chatbot',
     tools: 'Mistral, RAG, FASTAPI, ChromaDB, Streamlit',
     description: 'A PDF-based QA system using Streamlit, FastAPI, ChromaDB, and a local Mistral model, enabling private, efficient document analysis and question answering through RAG and vector embeddings.',
-    github: '#',
+    github: 'https://github.com/VishnuRam16/PDF-Parser-Chatbot',
     category: 'AI/ML',
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     title: 'Bar Hopping Guide',
     tools: 'Mistral, Streamlit, Python, Folium, Geopy, OSRM',
     description: 'AI-generated content and geospatial mapping to create an interactive web application for planning and enhancing bar-hopping routes using Streamlit and Folium.',
-    github: '#',
+    github: 'https://github.com/VishnuRam16/Bar-Hopping-Guide',
     category: 'Web App',
   },
   {
@@ -90,7 +90,7 @@ const projects = [
     title: 'Amazon Data Engineering Books ETL Project',
     tools: 'Apache Airflow',
     description: 'Apache Airflow ETL pipeline that extracts Amazon book data via API, transforms it with SQL, and loads into PostgreSQL using Docker.',
-    github: '#',
+    github: 'https://github.com/VishnuRam16/Airflow-ETL-Project',
     category: 'Data Engineering',
   },
   {
@@ -98,7 +98,7 @@ const projects = [
     title: 'Patient-Centric Healthcare Database',
     tools: 'SQL',
     description: 'This ER diagram represents a patient-centric healthcare database, capturing patient demographics, medical history (procedures, medications, allergies, immunizations), and geographic data, with standardized reference tables ensuring consistency, scalability, and compliance.',
-    github: '#',
+    github: 'https://github.com/VishnuRam16/Synthetic-Patient-Database',
     category: 'Database',
   },
 ]

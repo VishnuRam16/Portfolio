@@ -145,7 +145,7 @@ export default function Skills() {
         >
           <p className="text-gray-400 mb-4">Also proficient with:</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Power BI', 'Excel', 'Tableau', 'SQL', 'Azure', 'Python', 'AWS', 'Salesforce'].map((tool) => (
+            {['FastAPI', 'Streamlit', 'Kafka', 'Git', 'Postman', 'Docling', 'Salesforce'].map((tool) => (
               <motion.span
                 key={tool}
                 whileHover={{ scale: 1.1, y: -2 }}

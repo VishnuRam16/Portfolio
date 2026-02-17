@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Briefcase, MapPin, Calendar } from 'lucide-react'
+import { MapPin, Calendar } from 'lucide-react'
 
 const experiences = [
   {
@@ -9,36 +9,42 @@ const experiences = [
     role: 'Data Engineer',
     location: 'Houston, TX, US - Remote',
     period: 'May 2025 - Present',
+    logo: '/experience-image-assets/dataparts.jpeg',
   },
   {
     company: 'One Community Inc',
     role: 'Data Engineer',
     location: 'Philadelphia, PA, US - Remote',
     period: 'Oct 2024 - May 2025',
+    logo: '/experience-image-assets/One%20Community.png',
   },
   {
     company: 'PrimePay',
     role: 'Business Intelligence Engineer',
     location: 'Philadelphia, PA, US',
     period: 'July 2024 - October 2024',
+    logo: '/experience-image-assets/primepay.png',
   },
   {
     company: 'PrimePay',
     role: 'Data Analytics Intern',
     location: 'Philadelphia, PA, US',
     period: 'June 2023 - September 2023',
+    logo: '/experience-image-assets/primepay.png',
   },
   {
     company: 'Algonomy',
     role: 'Data Scientist Co-op',
     location: 'San Francisco, CA - Remote',
     period: 'June 2021 - May 2022',
+    logo: '/experience-image-assets/Algonomy.png',
   },
   {
     company: 'PowerGrid',
     role: 'Data Analyst Intern',
     location: 'New Delhi, DL, IN - Remote',
     period: 'June 2020 - September 2020',
+    logo: '/experience-image-assets/PowerGrid.png',
   },
 ]
 
@@ -89,9 +95,16 @@ export default function Experience() {
                     className="glass-effect rounded-xl p-6 hover:border-primary-purple/50 transition-all duration-300"
                   >
                     <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-white mb-1">{exp.company}</h3>
-                        <p className="text-primary-pink font-semibold text-lg">{exp.role}</p>
+                      <div className="flex items-center gap-4">
+                        <img
+                          src={exp.logo}
+                          alt={`${exp.company} logo`}
+                          className="w-12 h-12 md:w-14 md:h-14 object-contain rounded-lg bg-white/5 flex-shrink-0"
+                        />
+                        <div>
+                          <h3 className="text-2xl font-bold text-white mb-1">{exp.company}</h3>
+                          <p className="text-primary-pink font-semibold text-lg">{exp.role}</p>
+                        </div>
                       </div>
                     </div>
 

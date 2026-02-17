@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowDown, Linkedin, Github, Mail, BookOpen } from 'lucide-react'
+import { Linkedin, Github, Mail, BookOpen } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 const socialLinks = [
@@ -21,10 +21,6 @@ export default function Hero() {
     window.addEventListener('mousemove', handleMouseMove)
     return () => window.removeEventListener('mousemove', handleMouseMove)
   }, [])
-
-  const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
-  }
 
   return (
     <section
@@ -118,20 +114,6 @@ export default function Hero() {
               </motion.a>
             ))}
           </motion.div>
-
-          {/* Scroll Indicator */}
-          <motion.button
-            onClick={scrollToAbout}
-            className="flex flex-col items-center gap-2 text-gray-400 hover:text-primary-purple transition-colors"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [0, 10, 0] }}
-            transition={{ 
-              opacity: { delay: 1.1, duration: 0.6 },
-              y: { repeat: Infinity, duration: 2, ease: 'easeInOut' }
-            }}
-          >
-            <ArrowDown size={24} />
-          </motion.button>
         </motion.div>
       </div>
 

@@ -130,7 +130,6 @@ export default function Hero() {
               y: { repeat: Infinity, duration: 2, ease: 'easeInOut' }
             }}
           >
-            <span className="text-sm">Scroll to explore</span>
             <ArrowDown size={24} />
           </motion.button>
         </motion.div>

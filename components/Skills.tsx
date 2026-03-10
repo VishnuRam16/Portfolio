@@ -9,26 +9,27 @@ const skillCategories = [
     skills: [
       { name: 'SQL', years: 5 },
       { name: 'Python', years: 4 },
-      { name: 'Excel', years: 4 },
-      { name: 'Power BI', years: 3 },
-      { name: 'Data Analytics', years: 3 },
       { name: 'Database Modeling', years: 3 },
       { name: 'ETL Development', years: 3 },
       { name: 'Apache Airflow', years: 3 },
       { name: 'Predictive Analytics', years: 3 },
+      { name: 'FastAPI', years: 3 },
+      { name: 'Git', years: 3 },
     ],
   },
   {
     title: 'AI & Advanced',
     skills: [
       { name: 'Machine Learning', years: 3 },
-      { name: 'CI/CD (GitHub Actions, Jenkins),', years: 2 },
-      { name: 'LLMs/RAG', years: 1 },
-      { name: 'ChromaDB', years: 1 },
+      { name: 'CI/CD (GitHub Actions, Jenkins)', years: 2 },
       { name: 'REST APIs', years: 2 },
+      { name: 'Postman', years: 2 },
       { name: 'Tableau', years: 2 },
       { name: 'Docker', years: 2 },
-      { name: 'AWS', years: 1 },
+      { name: 'AWS', years: 2 },
+      { name: 'LLMs/RAG', years: 1.5 },
+      { name: 'ChromaDB', years: 1.5 },
+      { name: 'Docling', years: 1 },
     ],
   },
 ]
@@ -145,7 +146,7 @@ export default function Skills() {
         >
           <p className="text-gray-400 mb-4">Also proficient with:</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {['FastAPI', 'Streamlit', 'Kafka', 'Git', 'Postman', 'Docling', 'Salesforce'].map((tool) => (
+            {['Power BI', 'Excel', 'Data Analytics', 'Streamlit', 'Kafka', 'Salesforce'].map((tool) => (
               <motion.span
                 key={tool}
                 whileHover={{ scale: 1.1, y: -2 }}

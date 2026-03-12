@@ -46,46 +46,6 @@ const projects = [
     category: 'AI/ML',
   },
   {
-    id: 6,
-    title: 'FLIGHT STATUS DASHBOARD',
-    tools: 'Power BI',
-    description: 'This flight status dashboard, created using Power BI, summarizes flight trends, delays, cancellations, top cities, airlines, and cancellation reasons.',
-    github: '#',
-    category: 'Data Viz',
-  },
-  {
-    id: 7,
-    title: 'Store Sales Dashboard',
-    tools: 'Power BI',
-    description: 'This sales dashboard, created using Power BI, highlights key metrics like total sales, profit, product performance, sales type, and payment modes.',
-    github: '#',
-    category: 'Data Viz',
-  },
-  {
-    id: 8,
-    title: 'HR Attrition Analysis Dashboard',
-    tools: 'Power BI',
-    description: 'This is an HR dashboard analyzing employee attrition patterns at IBM across different factors including job roles, education, age, distance from work, and satisfaction levels.',
-    github: '#',
-    category: 'Data Viz',
-  },
-  {
-    id: 9,
-    title: 'British Airways Reviews Dashboard',
-    tools: 'Tableau',
-    description: 'British Airways performance dashboard displays customer ratings across services, timeframes, aircraft types, and countries, highlighting strengths and areas for improvement.',
-    github: '#',
-    category: 'Data Viz',
-  },
-  {
-    id: 10,
-    title: 'Emergency Room Dashboard',
-    tools: 'Tableau',
-    description: 'Diverse ER data showing patient demographics, wait times, satisfaction, and referrals. Highlights gender balance, age trends, racial diversity, and common medical needs.',
-    github: '#',
-    category: 'Data Viz',
-  },
-  {
     id: 11,
     title: 'Amazon Data Engineering Books ETL Project',
     tools: 'Apache Airflow',
@@ -112,7 +72,7 @@ const projects = [
   },
 ]
 
-const categories = ['All', 'AI/ML', 'Data Viz', 'Data Engineering', 'Database', 'Web App']
+const categories = ['All', 'AI/ML', 'Data Engineering', 'Database', 'Web App']
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState('All')
@@ -125,7 +85,6 @@ export default function Projects() {
   const getCategoryColor = (category: string) => {
     const colors: Record<string, string> = {
       'AI/ML': 'border-primary-purple text-primary-purple',
-      'Data Viz': 'border-primary-pink text-primary-pink',
       'Data Engineering': 'border-primary-yellow text-primary-yellow',
       'Database': 'border-primary-purple text-primary-purple',
       'Web App': 'border-primary-pink text-primary-pink',

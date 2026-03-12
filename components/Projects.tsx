@@ -94,6 +94,15 @@ const projects = [
     category: 'Data Engineering',
   },
   {
+    id: 13,
+    title: 'LLM Token Burn Monitor',
+    tools: 'Python, PostgreSQL, dbt, Docker, LiteLLM, asyncpg',
+    description:
+      'An MVP-grade LLM cost monitoring system that logs every API call via LiteLLM callbacks into Postgres, models spend with dbt, and runs a watchdog to alert on budget breaches — giving per-user and per-feature visibility into token usage without vendor lock-in.',
+    github: 'https://github.com/VishnuRam16/Token-Burn-Monitor',
+    category: 'Data Engineering',
+  },
+  {
     id: 12,
     title: 'Patient-Centric Healthcare Database',
     tools: 'SQL',

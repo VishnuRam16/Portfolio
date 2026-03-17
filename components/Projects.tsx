@@ -60,7 +60,16 @@ const projects = [
     description:
       'An MVP-grade LLM cost monitoring system that logs every API call via LiteLLM callbacks into Postgres, models spend with dbt, and runs a watchdog to alert on budget breaches — giving per-user and per-feature visibility into token usage without vendor lock-in.',
     github: 'https://github.com/VishnuRam16/Token-Burn-Monitor',
-    category: 'Data Engineering',
+    category: 'Backend',
+  },
+  {
+    id: 14,
+    title: 'Smart File Organizer',
+    tools: 'Python, watchdog, pystray, Pillow',
+    description:
+      'A lightweight background utility that watches your Downloads folder, auto-categorizes new files into organized subfolders, and deduplicates OS-generated copies using SHA-256 hashing—archiving older versions with original file creation timestamps.',
+    github: 'https://github.com/VishnuRam16/Smart-File-Organizer',
+    category: 'Backend',
   },
   {
     id: 12,
@@ -72,7 +81,7 @@ const projects = [
   },
 ]
 
-const categories = ['All', 'AI/ML', 'Data Engineering', 'Database', 'Web App']
+const categories = ['All', 'AI/ML', 'Data Engineering', 'Backend', 'Database', 'Web App']
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState('All')
@@ -86,6 +95,7 @@ export default function Projects() {
     const colors: Record<string, string> = {
       'AI/ML': 'border-primary-purple text-primary-purple',
       'Data Engineering': 'border-primary-yellow text-primary-yellow',
+      'Backend': 'border-primary-pink text-primary-pink',
       'Database': 'border-primary-purple text-primary-purple',
       'Web App': 'border-primary-pink text-primary-pink',
     }
